@@ -1,0 +1,30 @@
+{
+    "name": "bluescreen/kmeans",
+    "authors": [
+        {
+            "name": "Markus Muschol",
+            "email": "markus.muschol@gmx.de"
+        }
+    ],
+    "minimum-stability": "dev",
+    "repositories":[{
+        "type": "vcs", "url": "git@github.com:bluescreen/numphp.git"
+    }],
+    "require": {
+        "bluescreen/numphp":"dev-master",
+        "rulin132/jpgraph": "^4.2"
+
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "symfony/var-dumper": "^4.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    }
+}
